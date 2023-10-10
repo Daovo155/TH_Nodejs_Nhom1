@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Tên tài khoản</th>
+            <th scope="col">Giới tính</th>
+            <th scope="col">Email</th>
+            <th scope="col">Địa chỉ</th>
+            <th scope="col">Quyền cấu hình</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach(function(user) { %>
+        <tr>
+            <th scope="row">1</th>
+            <td><%= user.name %></td>
+            <td>Nam</td>
+            <td><%= user.email %></td>
+            <td>123 ABC Street</td>
+            <td><%= user.role %></td>
+        </tr>
+        <% }); %>
+       
+        <!-- Thêm dữ liệu cho các hàng khác -->
+    </tbody>
+</table>

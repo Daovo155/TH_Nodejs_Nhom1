@@ -1,0 +1,12 @@
+<% if (data.name) { %>
+    <h2><%= data.name %></h2>
+<% } %>
+
+<% for( let index = 1; index < data.rows.length; index++ ) { %>
+    <ul>
+        <li><%= data.rows[index].MaDM %></li>
+        <li><%= data.rows[index].TenDM %></li>   
+        <li><%= data.rows[index].MoTa %></li>
+        <!-- lưu ý thêm dấu bằng khi xuất dữ liệu -->
+    </ul>
+<% } %>
